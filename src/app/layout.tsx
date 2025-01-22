@@ -1,6 +1,7 @@
 import { ThemeProvider } from "@/components/providers/theme";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -29,6 +30,15 @@ export default function RootLayout({
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
 				<ThemeProvider attribute={"class"} enableSystem defaultTheme="light">
+					<div className="flex w-full flex-col items-center pt-5">
+						<Image
+							src={"/logo.png"}
+							alt="MOSC Logo"
+							width={400}
+							height={400}
+							className="h-[80px] object-contain"
+						/>
+					</div>
 					{children}
 				</ThemeProvider>
 			</body>
