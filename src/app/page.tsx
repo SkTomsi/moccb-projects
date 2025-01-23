@@ -19,12 +19,12 @@ export default function Home() {
 						<h1 className="font-bold text-2xl tracking-tighter md:text-4xl">
 							Malankara Orthodox Church Council of Bombay
 						</h1>
-						<p className="text-pretty font-thin text-sm tracking-normal md:text-base lg:w-1/2">
+						<p className="text-pretty font-normal text-sm tracking-normal md:text-base lg:w-1/2">
 							The Malankara Orthodox Church Council of Bombay (MOCCB) is a
 							registered charitable Trust formed in the year 1982 along with its
 							sister Trusts, headquartered in Vashi, Navi Mumbai.
 						</p>
-						<p className="text-pretty font-thin text-sm tracking-normal md:text-base lg:w-1/2">
+						<p className="text-pretty font-normal text-sm tracking-normal md:text-base lg:w-1/2">
 							The MOCCB and its affiliated Trusts have undertaken a range of
 							impactful social initiatives
 						</p>
