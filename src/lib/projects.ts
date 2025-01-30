@@ -9,6 +9,8 @@ import tejaswini from "@/assets/tejaswini-school.jpg";
 import trainingCenter from "@/assets/training-center.png";
 import welfareCenter from "@/assets/welfare-center.jpeg";
 import type { StaticImageData } from "next/image";
+import type { JSX } from "react";
+import { GreogrianMapFrame, StMarysMapFrame } from "./mapframes";
 
 export interface Project {
 	slug?: string;
@@ -17,6 +19,7 @@ export interface Project {
 	image?: StaticImageData;
 	shortDescription: string;
 	longDescription: string[];
+	locationLink?: string | JSX.Element;
 }
 
 export const projects: Project[] = [
@@ -30,6 +33,8 @@ export const projects: Project[] = [
 			"Understanding the needs of cancer patients, a shelter home was set up in Nerul, Navi Mumbai. This home offers accommodation, food, and support to around 600 patients annually who come to Mumbai for treatment.",
 			"It is seen that many of the cancer patients who come to Mumbai from outstation are from a poor background. As a result, these patients and/ or the relatives accompanying them cannot afford a decent place to stay in Mumbai during the treatment period, as accommodation in Mumbai is very expensive. A large number of such people have no option but to live on roadside. By the grace of God, we could start a shelter home for such people in Navi Mumbai, on the 1st August 2019 viz., ‘Dr. Mar Theophilus Ashraya Bhavan’ at Row House No 28, Plot No 35, Nandanvan CHS, Sector 17, Nerul, Navi Mumbai. We are providing free food, accommodation and transportation to Tata Hospital, to a limited number of patients and their bystander relatives. Monthly expenses to run this project comes to around Rs. Two lakhs.  Rev. Fr. Benjamin Stephen is serving as the manager for this project.",
 		],
+		locationLink:
+			"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3413.1797147591883!2d73.01984327466411!3d19.033532453305398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3463d515783%3A0xd4c5c75c536ab54a!2sDr.%20Mar%20Theophilus%20Ashraya%20Bhavan!5e1!3m2!1sen!2sin!4v1738233997567!5m2!1sen!2sin",
 	},
 	{
 		slug: "tejaswini-school",
@@ -44,6 +49,7 @@ export const projects: Project[] = [
 			"All the infrastructure facilities of St. Mary’s Multipurpose High School, Vashi are made available to these underprivileged children free of cost, including the TeachNext Smart Class facility (teaching with the help of LCD Projector, Computer and CD’s) which normally costs Rs. 34,100/- per student per annum for a regular student.",
 			"Besides free education in English medium - transportation, school books, uniforms and one-time snacks are also provided free of cost. The aggregate expenditure per child per annum is Rs. 18750/- excluding Smart Class facility etc. More than Rs. 80 lakhs are being spent annually for this single project.",
 		],
+		locationLink: StMarysMapFrame(),
 	},
 	{
 		slug: "annayojana",
@@ -55,6 +61,7 @@ export const projects: Project[] = [
 			"Addressing the hunger faced by relatives accompanying patients at the Vashi Municipal hospital, this initiative offers free lunches and bottled water to about 150 individuals every Saturday. The aim is to expand this service to more days through increased sponsorship.",
 			"Annayojana is a programme for providing free food for the patients and their bystanders at Municipal Hospital, Vashi. We started this project in the year 2017. Every Saturday we are providing 150 packets of food in the noon time with the financial support of our faithful. We express our sincere gratitude to our Vashi parish MGOCSM, OCYM and other church members for their sincere support as the volunteer team.",
 		],
+		locationLink: StMarysMapFrame(),
 	},
 	{
 		slug: "nutrition-for-tb-afflicted-children",
@@ -127,6 +134,7 @@ export const projects: Project[] = [
 			"Dedicated to the well-being of differently-abled youths, the Gregorian Special School serves children aged 6 to 18. The school operates under the guidance of capable special educators who provide tailored educational programs designed to meet the unique needs of each student.",
 			"The school focuses on creating an inclusive environment that nurtures the potential of every student, offering specialized curricula, therapeutic interventions, and extracurricular activities aimed at holistic development.",
 		],
+		locationLink: GreogrianMapFrame(),
 	},
 	{
 		slug: "gregorian-care-center",
@@ -140,6 +148,7 @@ export const projects: Project[] = [
 			"Provides comfortable lodging, meals, medical assistance, and other amenities to its residents",
 			"Sponsor an amount of ₹ 2,00,000/- towards a month expense or ₹ 15,000/- to care for 1 person a month.",
 		],
+		locationLink: GreogrianMapFrame(),
 	},
 	{
 		slug: "counselling-centres",
