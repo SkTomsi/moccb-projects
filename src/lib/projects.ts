@@ -31,7 +31,7 @@ export const projects: Project[] = [
 		shortDescription: "A care home for cancer patients & bystanders",
 		longDescription: [
 			"Understanding the needs of cancer patients, a shelter home was set up in Nerul, Navi Mumbai. This home offers accommodation, food, and support to around 600 patients annually who come to Mumbai for treatment.",
-			"It is seen that many of the cancer patients who come to Mumbai from outstation are from a poor background. As a result, these patients and/ or the relatives accompanying them cannot afford a decent place to stay in Mumbai during the treatment period, as accommodation in Mumbai is very expensive. A large number of such people have no option but to live on roadside. By the grace of God, we could start a shelter home for such people in Navi Mumbai, on the 1st August 2019 viz., ‘Dr. Mar Theophilus Ashraya Bhavan’ at Row House No 28, Plot No 35, Nandanvan CHS, Sector 17, Nerul, Navi Mumbai. We are providing free food, accommodation and transportation to Tata Hospital, to a limited number of patients and their bystander relatives. Monthly expenses to run this project comes to around Rs. Two lakhs.  Rev. Fr. Benjamin Stephen is serving as the manager for this project.",
+			"It is seen that many of the cancer patients who come to Mumbai from outstation are from a poor background. As a result, these patients and/ or the relatives accompanying them cannot afford a decent place to stay in Mumbai during the treatment period, as accommodation in Mumbai is very expensive. A large number of such people have no option but to live on roadside. By the grace of God, we could start a shelter home for such people in Navi Mumbai, on the 1st August 2019. We are providing free food, accommodation and transportation to Tata Hospital, to a limited number of patients and their bystander relatives. Rev. Fr. Benjamin Stephen is serving as the manager for this project.",
 		],
 		locationLink:
 			"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3413.1797147591883!2d73.01984327466411!3d19.033532453305398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3463d515783%3A0xd4c5c75c536ab54a!2sDr.%20Mar%20Theophilus%20Ashraya%20Bhavan!5e1!3m2!1sen!2sin!4v1738233997567!5m2!1sen!2sin",
@@ -46,8 +46,8 @@ export const projects: Project[] = [
 		longDescription: [
 			"Operating since 2004 in Vashi, this school exemplifies our commitment to social justice in education. It provides high-quality English medium education up to SSC level for economically disadvantaged children from the Turbhe slum area. This includes free education, transport, uniforms, books, and even daily necessities like snacks.",
 			"St. Mary’s Tejaswini School, started in 2004, has become a full-fledged school up to the 10th Std. and has a present strength of 391 students, from the Turbhe slum area.  As per the Education Department’s requirements, the school timing is 2.15 p.m. - 7.00 p.m.",
-			"All the infrastructure facilities of St. Mary’s Multipurpose High School, Vashi are made available to these underprivileged children free of cost, including the TeachNext Smart Class facility (teaching with the help of LCD Projector, Computer and CD’s) which normally costs Rs. 34,100/- per student per annum for a regular student.",
-			"Besides free education in English medium - transportation, school books, uniforms and one-time snacks are also provided free of cost. The aggregate expenditure per child per annum is Rs. 18750/- excluding Smart Class facility etc. More than Rs. 80 lakhs are being spent annually for this single project.",
+			"All the infrastructure facilities of St. Mary’s Multipurpose High School, Vashi are made available to these underprivileged children free of cost, including the TeachNext Smart Class facility (teaching with the help of LCD Projector, Computer and CD’s)",
+			"Besides free education in English medium - transportation, school books, uniforms and one-time snacks are also provided free of cost.",
 		],
 		locationLink: StMarysMapFrame(),
 	},
@@ -88,13 +88,8 @@ export const projects: Project[] = [
 		shortDescription:
 			"A clinic for all villagers and a medical van which travels to villages around.",
 		longDescription: [
-			"Recognizing the high prevalence of TB-afflicted children in the Turbhe slum area, MOCCB initiated a scheme providing daily nutrition comprising milk with Bournvita, boiled eggs, fruits, and snacks to these children.",
-			"The Diocese of Bombay has been running a Nutrition Program for children in the Turbhe area of Navi Mumbai since 2009. Turbhe, which is Navi Mumbai’s largest slum, many children who are unable to get a healthy, nutritional diet required for their growth and health. So, the Diocese decided to step in and provide a protein-rich diet of a glass of milk and a boiled egg to the children every morning.",
-			"Initially, the target children were those affected by TB, organized with data and support received from the NNMC.",
-			"In 2010, the MOCCB partnered with the Outreach Program of the Terana Hospital, Nerul, who identified the malnourished children of the area. On the recommendation of the doctors, children below 7 years of age were admitted to the Nutrition Program. Daily, more than 30 children were fed, and the doctors monitored the health and growth of these children.",
-			"The target was to get the children to cross the required parameters of height, weight, and overall health. It was a good feeling when the children grew healthy and gained strength. This collaboration with the doctors went on smoothly and the MOCCB has successfully catered to 30 to 35 children daily. Unfortunately, due to Covid, the program had to be halted.",
-			"In the years following COVID, from 2023, the MOCCB has restarted the Nutrition Program. This time, children are identified from the surrounding BAL VADIs. The program works in collaboration with teachers in charge who recommend children to participate. The target number of children for the program is 30 to 35.",
-			"Apart from the daily supply of milk and eggs, donations of care packages containing household daily use items are occasionally distributed to the families of the children. Special thanks to Mrs. Junu Joseph for her dedicated service as the coordinator for the project.",
+			"A clinic for all villagers and a medical van which travels to villages around.",
+			" Offers free consultation, medicines, services of a doctor, nurse and ambulance",
 		],
 	},
 	{
