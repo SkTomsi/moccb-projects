@@ -52,13 +52,13 @@ export default function RootLayout({
 					<div className="flex w-full justify-evenly items-center pt-5 gap-4 max-w-3xl mx-auto text-sm max-sm:px-5">
 						<Link
 							href={"#council-members"}
-							className="flex items-center gap-2  tracking-tight font-medium"
+							className="flex items-center gap-2  tracking-tight font-medium max-sm:hidden"
 						>
 							Council Members
 						</Link>
 						<Link
 							href={"#education-board"}
-							className="flex items-center gap-2  tracking-tight font-medium"
+							className="flex items-center gap-2  tracking-tight font-medium max-sm:hidden"
 						>
 							Education Board
 						</Link>
@@ -73,13 +73,13 @@ export default function RootLayout({
 						</Link>
 						<Link
 							href={"#institutions"}
-							className="flex items-center gap-2  tracking-tight font-medium"
+							className="flex items-center gap-2  tracking-tight font-medium max-sm:hidden"
 						>
 							Institutions
 						</Link>
 						<Link
 							href={"#community-services"}
-							className="flex items-center gap-2  tracking-tight font-medium"
+							className="flex items-center gap-2  tracking-tight font-medium max-sm:hidden"
 						>
 							Community Services
 						</Link>
