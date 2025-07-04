@@ -76,3 +76,7 @@ body {
 	white-space: unset;
   text-wrap: balance;
 }
+
+html {
+	scroll-behavior: smooth;
+}

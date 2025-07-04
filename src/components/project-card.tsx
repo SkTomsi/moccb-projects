@@ -1,4 +1,4 @@
-import type { Project } from "@/lib/projects";
+import type { Project } from "@/data/projects";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,14 +18,16 @@ export function ProjectCard({ project: p }: { project: Project }) {
 							height={400}
 							className="h-full w-full rounded-2xl border border-muted-foreground/20 object-cover"
 						/>
-					) : null}
+					) : (
+						<div className="bg-gray-100 w-full h-full" />
+					)}
 				</div>
-				<div className="mt-5 flex flex-grow flex-col justify-between gap-1 ">
+				<div className="mt-5 flex flex-grow flex-col gap-1 ">
 					<div className="flex flex-col gap-1">
 						<h2 className="font-bold text-base tracking-tight">{p.name}</h2>
 						<p className="text-base">{p.shortDescription}</p>
 					</div>
-					<div className="mt-2 text-sm">{p.location}</div>
+					<div className="text-sm">{p.location}</div>
 				</div>
 			</div>
 		</Link>

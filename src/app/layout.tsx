@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 	description:
 		"This is the official website of the Malankara Orthodox Church Council of Bombay projects",
 	creator: "Tomcy Thomas",
-	authors: [{ name: "Tomcy Thomas", url: "https://hello-sktomsi.vercel.app/" }],
+	authors: [{ name: "Tomcy Thomas", url: "https://sktomsi.lol" }],
 	publisher: "Tomcy Thomas",
 	alternates: {
 		canonical: "/",
@@ -44,16 +44,44 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body className={`${geistSans.className} antialiased`}>
-				<ThemeProvider attribute={"class"} enableSystem defaultTheme="light">
-					<div className="flex w-full flex-col items-center pt-5">
+				<ThemeProvider
+					attribute={"class"}
+					enableSystem={false}
+					defaultTheme="light"
+				>
+					<div className="flex w-full justify-evenly items-center pt-5 gap-4 max-w-3xl mx-auto text-sm max-sm:px-5">
+						<Link
+							href={"#council-members"}
+							className="flex items-center gap-2  tracking-tight font-medium"
+						>
+							Council Members
+						</Link>
+						<Link
+							href={"#education-board"}
+							className="flex items-center gap-2  tracking-tight font-medium"
+						>
+							Education Board
+						</Link>
 						<Link href={"/"}>
 							<Image
 								src={"/logo.png"}
 								alt="MOSC Logo"
-								width={400}
-								height={400}
-								className="h-[80px] object-contain"
+								width={100}
+								height={100}
+								className="h-[120px] object-contain"
 							/>
+						</Link>
+						<Link
+							href={"#institutions"}
+							className="flex items-center gap-2  tracking-tight font-medium"
+						>
+							Institutions
+						</Link>
+						<Link
+							href={"#community-services"}
+							className="flex items-center gap-2  tracking-tight font-medium"
+						>
+							Community Services
 						</Link>
 					</div>
 					{children}
