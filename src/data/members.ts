@@ -15,12 +15,18 @@ export const workingCommittee: Member[] = [
 	{
 		name: "Mr. Abraham Easo",
 		phone: "98332 26959",
-		location: "Dy. CEO",
+		location: "Dy. CEO - Projects",
+		image: "",
+	},
+	{
+		name: "Mr. Daniel Binu Varghese",
+		phone: "95003 11222",
+		location: "Dy. CEO - Operations",
 		image: "",
 	},
 ];
 
-export const members: Member[] = [	
+export const members: Member[] = [
 	{
 		name: "H. G. Geevarghese Mar Coorilos",
 		location: "President (Metropolitan)",
