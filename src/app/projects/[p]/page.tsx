@@ -34,7 +34,7 @@ export default function ProjectsPage() {
 					{projectDetails.location}
 				</div>
 				<div className="flex w-full flex-col gap-2 ">
-					{projectDetails.longDescription.map((desc, i) => (
+					{projectDetails?.longDescription.map((desc, i) => (
 						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 						<p key={i}>{desc}</p>
 					))}

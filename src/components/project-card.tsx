@@ -4,7 +4,10 @@ import Link from "next/link";
 
 export function ProjectCard({ project: p }: { project: Project }) {
 	return (
-		<Link href={`/projects/${p.slug}`}>
+		<Link
+			href={`/projects/${p.slug}`}
+			className="hover:translate-y-[-10px] transition-all duration-300 ease-out"
+		>
 			<div
 				key={p.name}
 				className="flex h-full max-h-[500px] w-full flex-col rounded-2xl "

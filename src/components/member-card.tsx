@@ -5,7 +5,7 @@ export function MemberCard({ member: m }: { member: Member }) {
 	return (
 		<div
 			key={m.name}
-			className="flex h-full max-h-[500px] w-full flex-col rounded-2xl "
+			className="hover:translate-y-[-10px] transition-all duration-300 ease-out flex h-full max-h-[500px] w-full flex-col rounded-2xl "
 		>
 			<div className="h-[300px] w-full overflow-hidden rounded-2xl">
 				{m.image ? (
