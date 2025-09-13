@@ -28,14 +28,14 @@ export const categories = [
 		icon: "/school.png",
 	},
 	{
-		name: "Partnering Trusts",
-		href: "/partnering-trusts",
-		icon: "/trust.png",
-	},
-	{
 		name: "Community Services",
 		href: "/community-services",
 		icon: "/social.png",
+	},
+	{
+		name: "Partnering Trusts",
+		href: "/partnering-trusts",
+		icon: "/trust.png",
 	},
 ];
 
