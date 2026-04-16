@@ -1,10 +1,8 @@
-import { MainMenu } from "@/components/main-menu";
-import { ThemeProvider } from "@/components/providers/theme";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
-import Image from "next/image";
-import Link from "next/link";
+import { Header } from "@/components/header";
 import "./globals.css";
+import { MainMenu } from "@/components/main-menu";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -45,14 +43,8 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body className={`${geistSans.className} antialiased`}>
-				<ThemeProvider
-					attribute={"class"}
-					enableSystem={false}
-					defaultTheme="light"
-				>
-					<MainMenu />
-					{children}
-				</ThemeProvider>
+				<Header />
+				{children}
 			</body>
 		</html>
 	);

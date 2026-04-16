@@ -1,6 +1,10 @@
 // components/main-menu.tsx
 "use client";
 
+import { ChevronDown, Menu } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import * as React from "react";
 import { Button } from "@/components/ui/button";
 import {
 	Collapsible,
@@ -18,10 +22,6 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { ChevronDown, Menu } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import * as React from "react";
 
 // Helper component for list items within NavigationMenuContent
 const ListItem = React.forwardRef<
