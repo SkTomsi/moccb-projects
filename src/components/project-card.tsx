@@ -1,12 +1,13 @@
-import type { Project } from "@/data/projects";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import type { Project } from "@/data/projects";
 
 export function ProjectCard({ project: p }: { project: Project }) {
 	return (
 		<Link
 			href={`/projects/${p.slug}`}
-			className="hover:translate-y-[-10px] transition-all duration-300 ease-out"
+			className="hover:translate-y-[-10px] transition-all duration-300 ease-out group"
 		>
 			<div
 				key={p.name}
@@ -26,11 +27,16 @@ export function ProjectCard({ project: p }: { project: Project }) {
 					)}
 				</div>
 				<div className="mt-5 flex flex-grow flex-col gap-1 ">
-					<div className="flex flex-col gap-1">
-						<h2 className="font-bold text-base tracking-tight">{p.name}</h2>
-						<p className="text-base">{p.shortDescription}</p>
+					<div className="flex gap-1 items-center">
+						<div className="flex flex-col w-full">
+							<h2 className="font-bold text-base tracking-tight">{p.name}</h2>
+							<p className="text-base text-muted-foreground">
+								{p.shortDescription}
+							</p>
+						</div>
+						<ArrowRight className="opacity-0 group-hover:opacity-100 transition-all duration-300 ease-out h-6 w-6" />
 					</div>
-					<div className="text-sm">{p.location}</div>
+					<div className="text-sm text-muted-foreground">{p.location}</div>
 				</div>
 			</div>
 		</Link>

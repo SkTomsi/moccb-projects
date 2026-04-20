@@ -15,6 +15,25 @@ import {
 } from "./ui/navigation-menu";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
+const NAV_MENU = [
+	{
+		name: "Administrators",
+		href: "/administrators",
+	},
+	{
+		name: "Community Services",
+		href: "/community-services",
+	},
+	{
+		name: "Partnering Trusts",
+		href: "/partnering-trusts",
+	},
+	{
+		name: "About Us",
+		href: "/about-us",
+	},
+];
+
 export function Header() {
 	const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
@@ -70,30 +89,16 @@ export function Header() {
 						<nav className="hidden md:flex md:space-x-4">
 							<NavigationMenu>
 								<NavigationMenuList>
-									<NavigationMenuItem>
-										<NavigationMenuLink
-											asChild
-											className={navigationMenuTriggerStyle()}
-										>
-											<Link href="/administrators">Administrators</Link>
-										</NavigationMenuLink>
-									</NavigationMenuItem>
-									<NavigationMenuItem>
-										<NavigationMenuLink
-											asChild
-											className={navigationMenuTriggerStyle()}
-										>
-											<Link href="/partnering-trusts">Partnering Trusts</Link>
-										</NavigationMenuLink>
-									</NavigationMenuItem>
-									<NavigationMenuItem>
-										<NavigationMenuLink
-											asChild
-											className={navigationMenuTriggerStyle()}
-										>
-											<Link href="/about-us">About Us</Link>
-										</NavigationMenuLink>
-									</NavigationMenuItem>
+									{NAV_MENU.map((i) => (
+										<NavigationMenuItem key={i.name}>
+											<NavigationMenuLink
+												asChild
+												className={navigationMenuTriggerStyle()}
+											>
+												<Link href={i.href}>{i.name}</Link>
+											</NavigationMenuLink>
+										</NavigationMenuItem>
+									))}
 								</NavigationMenuList>
 							</NavigationMenu>
 						</nav>

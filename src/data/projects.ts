@@ -1,3 +1,5 @@
+import type { StaticImageData } from "next/image";
+import type { JSX } from "react";
 import annayojana from "@/assets/annayojana.jpg";
 import ashray from "@/assets/ashray.jpeg";
 import counseling from "@/assets/counseling.webp";
@@ -8,8 +10,6 @@ import specialSchool from "@/assets/special-school.webp";
 import tejaswini from "@/assets/tejaswini-school.jpg";
 import trainingCenter from "@/assets/training-center.png";
 import welfareCenter from "@/assets/welfare-center.jpeg";
-import type { StaticImageData } from "next/image";
-import type { JSX } from "react";
 import { GreogrianMapFrame, StMarysMapFrame } from "../lib/mapframes";
 
 export interface Project {
@@ -169,27 +169,5 @@ export const projects: Project[] = [
 		name: "Malankara Orthodox Medical Centre (HIV Care)",
 		image: "",
 		location: "Turbhe",
-	},
-	{ name: "St. Mary's Medical Centre & Balvadi", image: "", location: "Dadar" },
-	{ name: "St. Mary's Charitable Clinic", image: "", location: "Dombivli" },
-	{ name: "St. John's Charitable Clinic", image: "", location: "Andheri" },
-	{ name: "St. Gregorios Charitable Clinic", image: "", location: "Chembur" },
-	{
-		name: "Mar Theophilus Memorial Charitable Clinic",
-		image: "",
-		location: "Borivili",
-	},
-	{ name: "St. Mary's Charitable Dispensary", image: "", location: "Pune" },
-	{ name: "St. Paul's Medical Centre", image: "", location: "Powai" },
-	{ name: "St. Stephen's Charitable Clinic", image: "", location: "Thane" },
-	{
-		name: "Dr. Mar. Theophilus Charitable Dispensary",
-		image: "",
-		location: "S V Road, Malad",
-	},
-	{
-		name: "Dr. Mar. Theophilus Charitable Dispensary",
-		image: "",
-		location: "Malwani, Malad",
 	},
 ];
