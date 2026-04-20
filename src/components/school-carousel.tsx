@@ -7,6 +7,8 @@ import {
 	Carousel,
 	CarouselContent,
 	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Badge } from "./ui/badge";
 
@@ -51,6 +53,10 @@ export function CarouselPlugin() {
 								</CarouselItem>
 							))}
 						</CarouselContent>
+					</div>
+					<div className="max-md:hidden">
+						<CarouselPrevious />
+						<CarouselNext />
 					</div>
 				</Carousel>
 			</div>
