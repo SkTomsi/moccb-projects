@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Bricolage_Grotesque, Geist } from "next/font/google";
 import { Header } from "@/components/header";
 import "./globals.css";
 import { MainMenu } from "@/components/main-menu";
@@ -7,6 +7,10 @@ import { MainMenu } from "@/components/main-menu";
 const geistSans = Geist({
 	variable: "--font-geist-sans",
 	subsets: ["latin"],
+});
+
+const grot = Bricolage_Grotesque({
+	variable: "--font-grotesque",
 });
 
 export const metadata: Metadata = {
@@ -42,7 +46,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<body className={`${geistSans.className} antialiased`}>
+			<body className={`${grot.className} antialiased`}>
 				<Header />
 				{children}
 			</body>

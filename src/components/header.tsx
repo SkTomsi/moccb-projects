@@ -47,12 +47,12 @@ export function Header() {
 
 	return (
 		<div className="w-full">
-			<header className="bg-background sticky top-0 z-50">
-				<div className="px-5 pt-4 flex items-center justify-between">
+			<header className="bg-white rounded-full sticky top-0 z-50 max-w-6xl mx-auto my-4">
+				<div className="px-5 py-4 flex items-center justify-between">
 					<Link href={"/"}>
 						<div className="flex items-center space-x-2">
 							<Image
-								className="size-[70px] object-contain "
+								className="size-[50px] object-contain "
 								src={"/logo.png"}
 								alt="MOSC Logo"
 								width={80}
