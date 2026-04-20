@@ -81,20 +81,22 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="max-w-7xl w-full relative space-y-12 md:gap-12 px-4 pt-20 flex flex-col md:flex-row min-h-full">
-				<div className="flex flex-col items-start gap-2">
+				<div className="flex flex-col items-start gap-2 md:py-10">
 					<Badge>About Us</Badge>
 					<h1 className="text-4xl font-bold text-balance">
 						Malankara Orthodox Church Council of Bombay
 					</h1>
-					<p className="text-pretty font-normal text-sm tracking-normal md:text-base">
-						The Malankara Orthodox Church Council of Bombay (MOCCB) is a
-						registered charitable Trust formed in the year 1982 along with its
-						sister Trusts, headquartered in Vashi, Navi Mumbai.
-					</p>
-					<p className="text-pretty font-normal text-sm tracking-normal md:text-base">
-						The MOCCB and its affiliated Trusts have undertaken a range of
-						impactful social initiatives
-					</p>
+					<div className="text-muted-foreground space-y-2">
+						<p className="font-normal text-sm tracking-normal md:text-base text-balance">
+							The Malankara Orthodox Church Council of Bombay (MOCCB) is a
+							registered charitable Trust formed in the year 1982 along with its
+							sister Trusts, headquartered in Vashi, Navi Mumbai.
+						</p>
+						<p className="text-balance font-normal text-sm tracking-normal md:text-base">
+							The MOCCB and its affiliated Trusts have undertaken a range of
+							impactful social initiatives
+						</p>
+					</div>
 				</div>
 				<div className="w-full min-h-full bg-border rounded-2xl max-md:aspect-square" />
 			</div>

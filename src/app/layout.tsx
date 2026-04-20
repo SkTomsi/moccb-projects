@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque, Geist } from "next/font/google";
 import { Header } from "@/components/header";
 import "./globals.css";
+import Footer from "@/components/footer";
 import { MainMenu } from "@/components/main-menu";
 
 const geistSans = Geist({
@@ -49,6 +50,7 @@ export default function RootLayout({
 			<body className={`${grot.className} antialiased`}>
 				<Header />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);
