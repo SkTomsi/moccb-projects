@@ -1,9 +1,9 @@
 "use client";
 
-import { getProjectDetails } from "@/lib/utils";
 import { MailIcon, MapPin } from "lucide-react";
 import Image from "next/image";
 import { useParams } from "next/navigation";
+import { getProjectDetails } from "@/lib/utils";
 
 export default function ProjectsPage() {
 	const params = useParams<{ p: string }>();

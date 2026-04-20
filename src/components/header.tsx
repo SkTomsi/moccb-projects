@@ -113,21 +113,11 @@ export function Header() {
 							</SheetTrigger>
 							<SheetContent side="right" className="w-80 overflow-y-auto">
 								<div className="flex flex-col space-y-4 mt-6">
-									<MobileMenuItem
-										href="/administrators"
-										className="font-medium"
-									>
-										Administrators
-									</MobileMenuItem>
-									<MobileMenuItem
-										href="/partnering-trusts"
-										className="font-medium"
-									>
-										Partnering Trusts
-									</MobileMenuItem>
-									<MobileMenuItem href="/about-us" className="font-medium">
-										About Us
-									</MobileMenuItem>
+									{NAV_MENU.map((i) => (
+										<MobileMenuItem key={i.name} href={i.href}>
+											{i.name}
+										</MobileMenuItem>
+									))}
 								</div>
 							</SheetContent>
 						</Sheet>
