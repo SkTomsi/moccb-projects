@@ -8,7 +8,7 @@ export function ProjectCard({ project: p }: { project: Project }) {
 	return (
 		<Link
 			href={`/projects/${p.slug}`}
-			className="hover:translate-y-[-10px] transition-all duration-300 ease-out group hover:shadow-[0px_4px_0px_0px_(--tw-shadow-color)] shadow-primary"
+			className="hover:translate-y-[-10px] transition-all duration-300 ease-out group "
 		>
 			<div
 				key={p.name}
@@ -27,7 +27,7 @@ export function ProjectCard({ project: p }: { project: Project }) {
 						<div className="bg-gray-100 w-full h-full" />
 					)}
 				</div>
-				<div className="mt-5 flex flex-grow flex-col gap-1 ">
+				<div className="mt-5 flex grow flex-col gap-1 ">
 					<div className="flex flex-col gap-1">
 						<h2 className="font-bold text-base tracking-tight">{p.name}</h2>
 						<p className="text-base text-muted-foreground">
@@ -37,7 +37,14 @@ export function ProjectCard({ project: p }: { project: Project }) {
 					<div className="text-sm text-muted-foreground flex items-center justify-between">
 						{p.location}
 						<Button
-							className="opacity-0 group-hover:opacity-100 w-fit transition-all duration-300 ease-out"
+							className="opacity-0 max-md:hidden group-hover:opacity-100 w-fit transition-all duration-300 ease-out"
+							variant={"link"}
+						>
+							Read More
+							<ArrowRight className="h-6 w-6" />
+						</Button>
+						<Button
+							className="w-fit md:hidden text-sm"
 							variant={"link"}
 						>
 							Read More

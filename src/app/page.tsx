@@ -65,7 +65,7 @@ export default function Home() {
 					<Badge>About Us</Badge>
 					<h1 className="text-4xl font-bold text-balance">
 						Malankara Orthodox Church Council of Bombay
-					</h1>	
+					</h1>
 					<div className="text-muted-foreground space-y-2">
 						<p className="font-normal text-sm tracking-normal sm:text-base text-balance">
 							The Malankara Orthodox Church Council of Bombay (MOCCB) is a

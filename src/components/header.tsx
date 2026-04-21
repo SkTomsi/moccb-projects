@@ -77,7 +77,7 @@ export function Header() {
 								width={80}
 								height={80}
 							/>
-							<p className="text-base font-bold tracking-tight uppercase">
+							<p className="md:text-base text-xs font-bold tracking-tight uppercase">
 								Malankara Orthodox Church <br />
 								Council of Bombay
 							</p>
