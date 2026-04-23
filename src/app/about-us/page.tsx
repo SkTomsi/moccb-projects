@@ -11,76 +11,72 @@ import {
 
 export default function AboutUsPage() {
 	return (
-		<main className="min-h-[calc(100vh-4.5rem)] py-12">
-			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<h1 className="mb-8 text-3xl font-bold text-center">About Us</h1>
+		<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<h1 className="mb-8 text-3xl font-bold text-center">About Us</h1>
 
-				<div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2">
-					<Card className="h-full">
-						<CardHeader>
-							<CardTitle className="text-2xl">Our Mission</CardTitle>
-						</CardHeader>
-						<CardContent>
-							<p className="mb-4">
-								The Malankara Orthodox Church Council of Bombay (MOSC) is
-								dedicated to fostering spiritual growth, community service, and
-								preserving the rich heritage of the Malankara Orthodox Syrian
-								Church in the Mumbai region.
-							</p>
-							<p>
-								We strive to create a welcoming environment for all believers
-								while engaging in charitable activities that serve the broader
-								community.
-							</p>
-						</CardContent>
-					</Card>
+			<div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2">
+				<Card className="h-full">
+					<CardHeader>
+						<CardTitle className="text-2xl">Our Mission</CardTitle>
+					</CardHeader>
+					<CardContent>
+						<p className="mb-4">
+							The Malankara Orthodox Church Council of Bombay (MOSC) is
+							dedicated to fostering spiritual growth, community service, and
+							preserving the rich heritage of the Malankara Orthodox Syrian
+							Church in the Mumbai region.
+						</p>
+						<p>
+							We strive to create a welcoming environment for all believers
+							while engaging in charitable activities that serve the broader
+							community.
+						</p>
+					</CardContent>
+				</Card>
 
-					<Card className="h-full">
-						<CardHeader>
-							<CardTitle className="text-2xl">Our Vision</CardTitle>
-						</CardHeader>
-						<CardContent>
-							<p className="mb-4">
-								To be a beacon of faith and service in Bombay, strengthening the
-								Orthodox Christian community through worship, education, and
-								outreach programs that reflect Christ's love.
-							</p>
-							<p className="mb-4">
-								We envision a vibrant community where traditions are upheld,
-								youth are empowered, and everyone finds a place to grow
-								spiritually.
-							</p>
-							<Button variant="outline" asChild>
-								<Link href="/community-services">
-									Learn More About Our Services
-								</Link>
-							</Button>
-						</CardContent>
-					</Card>
-				</div>
-
-				<div className="mt-12">
-					<Card>
-						<CardHeader>
-							<CardTitle className="text-2xl">Our History</CardTitle>
-						</CardHeader>
-						<CardContent>
-							<p className="mb-4">
-								Established in [year], the Malankara Orthodox Church Council of
-								Bombay has grown from a small fellowship to a thriving community
-								serving hundreds of families across Mumbai and surrounding
-								areas.
-							</p>
-							<p>
-								Throughout our history, we have remained committed to the
-								apostolic faith, ecumenical dialogue, and humanitarian service,
-								following the footsteps of St. Thomas the Apostle who brought
-								Christianity to India in 52 AD.
-							</p>
-						</CardContent>
-					</Card>
-				</div>
+				<Card className="h-full">
+					<CardHeader>
+						<CardTitle className="text-2xl">Our Vision</CardTitle>
+					</CardHeader>
+					<CardContent>
+						<p className="mb-4">
+							To be a beacon of faith and service in Bombay, strengthening the
+							Orthodox Christian community through worship, education, and
+							outreach programs that reflect Christ's love.
+						</p>
+						<p className="mb-4">
+							We envision a vibrant community where traditions are upheld, youth
+							are empowered, and everyone finds a place to grow spiritually.
+						</p>
+						<Button variant="outline" asChild>
+							<Link href="/community-services">
+								Learn More About Our Services
+							</Link>
+						</Button>
+					</CardContent>
+				</Card>
 			</div>
-		</main>
+
+			<div className="mt-12">
+				<Card>
+					<CardHeader>
+						<CardTitle className="text-2xl">Our History</CardTitle>
+					</CardHeader>
+					<CardContent>
+						<p className="mb-4">
+							Established in [year], the Malankara Orthodox Church Council of
+							Bombay has grown from a small fellowship to a thriving community
+							serving hundreds of families across Mumbai and surrounding areas.
+						</p>
+						<p>
+							Throughout our history, we have remained committed to the
+							apostolic faith, ecumenical dialogue, and humanitarian service,
+							following the footsteps of St. Thomas the Apostle who brought
+							Christianity to India in 52 AD.
+						</p>
+					</CardContent>
+				</Card>
+			</div>
+		</div>
 	);
 }

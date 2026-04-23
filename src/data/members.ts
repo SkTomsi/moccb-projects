@@ -8,13 +8,18 @@ export interface Member {
 export const workingCommittee: Member[] = [
 	{
 		name: "H. G. Geevarghese Mar Coorilos",
-		location: "President (Metropolitan)",
+		location: "President and Chairman & Metropolitan of Bombay Diocese",
 		image: "/coorilos-thirumeni.png",
 	},
 	{
 		name: "H. G. Dr. Geevarghese Mar Theophilos",
-		location: "Vice President",
+		location: "Vice President & Asst. Metropolitan of Bombay Diocese",
 		image: "/assist-thirumeni.png",
+	},
+	{
+		name: "Rev. Fr. Thomas K Chacko",
+		location: "Secretary",
+		image: "",
 	},
 	{
 		name: "Rev. Fr. Abraham Joseph",
@@ -35,94 +40,63 @@ export const workingCommittee: Member[] = [
 
 export const members: Member[] = [
 	{
-		name: "Rev. Fr. Thomas K Chacko",
-		location: "Secretary",
-		image: "",
-	},
-	{
 		name: "Rev. Fr. Santhosh Varghese",
-		location: "Sakinaka",
+		location: "Member",
 		image: "",
 	},
 	{
 		name: "Rev. Fr. Shaji Chacko",
-		location: "Bahrain",
+		location: "Member",
 		image: "",
 	},
 	{
 		name: "Mr. A. G. Babu",
-		location: "Thane",
+		location: "Member",
 		image: "",
 	},
 	{
 		name: "Mr. Joseph Abraham",
-		location: "Kirkee",
+		location: "Member",
 		image: "",
 	},
 	{
 		name: "Mr. Sajeev P. Rajan",
-		location: "Vasai",
+		location: "Member",
 		image: "",
 	},
 	{
 		name: "Mr. Thomas Philip",
-		location: "Kalyan",
+		location: "Member",
 		image: "",
 	},
 	{
 		name: "Dr. Peter Philip",
-		location: "Mumbai",
+		location: "Member",
 		image: "",
 	},
-	{ name: "Mr. K. Thomas", location: "Vashi", image: "" },
 	{
 		name: "Mr. K. A. Thomas",
-		location: "Sanpada",
+		location: "Member",
 		image: "",
 	},
 	{
 		name: "Mr. R. T. Thomas",
-		location: "Andheri (W)",
+		location: "Member",
 		image: "",
 	},
 	{
 		name: "Mr. P. V. Varghese",
-		location: "Borivli",
+		location: "Member",
 		image: "",
 	},
 	{
 		name: "Mr. Blesson Oommen",
-		location: "Malad",
+		location: "Member",
 		image: "",
 	},
 ];
 
 export const educationBoardMembers: Member[] = [
-	{
-		name: "H.G. Geevarghese Mar Coorilos",
-		location: "Metropolitan",
-		image: "",
-	},
-	{
-		name: "H.G. Dr. Geevarghese Mar Theophilos",
-		location: "Asst. Metropolitan",
-		image: "",
-	},
-	{
-		name: "Rev. Fr. Thomas K Chacko",
-		location: "Diocesan Secretary",
-		image: "",
-	},
-	{
-		name: "Rev. Fr. Abraham Joseph",
-		location: "CEO",
-		image: "",
-	},
-	{
-		name: "Mr. Abraham Easo",
-		location: "Dy. CEO",
-		image: "",
-	},
 	{
 		name: "Dr. Peter Philip",
 

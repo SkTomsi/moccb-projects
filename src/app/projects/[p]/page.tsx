@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/suspicious/noArrayIndexKey: <explanation> */
 "use client";
 
 import { MailIcon, MapPin } from "lucide-react";
@@ -11,12 +12,16 @@ export default function ProjectsPage() {
 	const projectDetails = getProjectDetails(params.p);
 
 	if (!projectDetails) {
-		return <div>Project not found</div>;
+		return (
+			<div className="w-full h-full flex items-center justify-center pt-20">
+				<p>Project not found</p>
+			</div>
+		);
 	}
 
 	return (
 		<div className="flex h-full w-full flex-col items-center gap-8 pt-5 pb-10">
-			<div className="relative z-0 h-[500px] w-full flex-grow overflow-hidden md:h-[500px]">
+			<div className="relative z-0 h-[500px] w-full overflow-hidden md:h-[500px]">
 				<Image
 					src={projectDetails?.image ?? ""}
 					alt={projectDetails?.name}
@@ -35,7 +40,6 @@ export default function ProjectsPage() {
 				</div>
 				<div className="flex w-full flex-col gap-2 ">
 					{projectDetails?.longDescription?.map((desc, i) => (
-						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 						<p key={i}>{desc}</p>
 					))}
 				</div>

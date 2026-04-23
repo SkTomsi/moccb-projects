@@ -37,16 +37,13 @@ export function ProjectCard({ project: p }: { project: Project }) {
 					<div className="text-sm text-muted-foreground flex items-center justify-between">
 						{p.location}
 						<Button
-							className="opacity-0 max-md:hidden group-hover:opacity-100 w-fit transition-all duration-300 ease-out"
+							className="opacity-0 max-md:hidden group-hover:opacity-100 w-fit transition-all duration-300 ease-out px-0 py-2 h-2"
 							variant={"link"}
 						>
 							Read More
 							<ArrowRight className="h-6 w-6" />
 						</Button>
-						<Button
-							className="w-fit md:hidden text-sm"
-							variant={"link"}
-						>
+						<Button className="w-fit md:hidden text-sm p-0" variant={"link"}>
 							Read More
 							<ArrowRight className="h-6 w-6" />
 						</Button>

@@ -48,9 +48,11 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body className={`${grot.className} antialiased`}>
-				<Header />
-				{children}
-				<Footer />
+				<div className="flex flex-col min-h-screen">
+					<Header />
+					<main className="grow">{children}</main>
+					<Footer />
+				</div>
 			</body>
 		</html>
 	);

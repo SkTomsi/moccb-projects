@@ -52,18 +52,6 @@ export const projects: Project[] = [
 		locationLink: StMarysMapFrame(),
 	},
 	{
-		slug: "annayojana",
-		name: "ANNAYOJNA",
-		location: "Vashi, Navi Mumbai",
-		image: annayojana,
-		shortDescription: "A lunch meal for bystanders of NMMC Hospital, Vashi",
-		longDescription: [
-			"Addressing the hunger faced by relatives accompanying patients at the Vashi Municipal hospital, this initiative offers free lunches and bottled water to about 150 individuals every Saturday. The aim is to expand this service to more days through increased sponsorship.",
-			"Annayojana is a programme for providing free food for the patients and their bystanders at Municipal Hospital, Vashi. We started this project in the year 2017. Every Saturday we are providing 150 packets of food in the noon time with the financial support of our faithful. We express our sincere gratitude to our Vashi parish MGOCSM, OCYM and other church members for their sincere support as the volunteer team.",
-		],
-		locationLink: StMarysMapFrame(),
-	},
-	{
 		slug: "nutrition-for-tb-afflicted-children",
 		name: "NUTRITION for TB-AFFLICTED CHILDREN",
 		location: "Turbhe, Navi Mumbai",
@@ -118,20 +106,6 @@ export const projects: Project[] = [
 		],
 	},
 	{
-		slug: "gregorian-special-school",
-		name: "GREGORIAN SPECIAL SCHOOL",
-		location: "Roha, Maharashtra",
-		image: specialSchool,
-		shortDescription:
-			"To support children with determination for their developmental needs.",
-		longDescription: [
-			"An initiative of MOSC which seeks to find the beauty of children with determination Sponsor ₹ 2,00,000/- towards development of Sunday School curriculum",
-			"Dedicated to the well-being of differently-abled youths, the Gregorian Special School serves children aged 6 to 18. The school operates under the guidance of capable special educators who provide tailored educational programs designed to meet the unique needs of each student.",
-			"The school focuses on creating an inclusive environment that nurtures the potential of every student, offering specialized curricula, therapeutic interventions, and extracurricular activities aimed at holistic development.",
-		],
-		locationLink: GreogrianMapFrame(),
-	},
-	{
 		slug: "gregorian-care-center",
 		name: "GREGORIAN CARE CENTER",
 		location: "Roha, Maharashtra",
@@ -165,9 +139,33 @@ export const projects: Project[] = [
 			"Provide fees assistance for the financially weaker and academically excelling students.",
 		longDescription: ["Sponsor ₹10,00,000/- towards the same for a year"],
 	},
+];
+
+export const PartnerProjects: Project[] = [
 	{
-		name: "Malankara Orthodox Medical Centre (HIV Care)",
-		image: "",
-		location: "Turbhe",
+		slug: "annayojana",
+		name: "ANNAYOJNA",
+		location: "Vashi, Navi Mumbai",
+		image: annayojana,
+		shortDescription: "A lunch meal for bystanders of NMMC Hospital, Vashi",
+		longDescription: [
+			"Addressing the hunger faced by relatives accompanying patients at the Vashi Municipal hospital, this initiative offers free lunches and bottled water to about 150 individuals every Saturday. The aim is to expand this service to more days through increased sponsorship.",
+			"Annayojana is a programme for providing free food for the patients and their bystanders at Municipal Hospital, Vashi. We started this project in the year 2017. Every Saturday we are providing 150 packets of food in the noon time with the financial support of our faithful. We express our sincere gratitude to our Vashi parish MGOCSM, OCYM and other church members for their sincere support as the volunteer team.",
+		],
+		locationLink: StMarysMapFrame(),
+	},
+	{
+		slug: "gregorian-special-school",
+		name: "GREGORIAN SPECIAL SCHOOL",
+		location: "Roha, Maharashtra",
+		image: specialSchool,
+		shortDescription:
+			"To support children with determination for their developmental needs.",
+		longDescription: [
+			"An initiative of MOSC which seeks to find the beauty of children with determination Sponsor ₹ 2,00,000/- towards development of Sunday School curriculum",
+			"Dedicated to the well-being of differently-abled youths, the Gregorian Special School serves children aged 6 to 18. The school operates under the guidance of capable special educators who provide tailored educational programs designed to meet the unique needs of each student.",
+			"The school focuses on creating an inclusive environment that nurtures the potential of every student, offering specialized curricula, therapeutic interventions, and extracurricular activities aimed at holistic development.",
+		],
+		locationLink: GreogrianMapFrame(),
 	},
 ];

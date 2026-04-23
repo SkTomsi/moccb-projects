@@ -1,3 +1,4 @@
+import { School, Trophy, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { CarouselPlugin } from "@/components/school-carousel";
@@ -8,12 +9,18 @@ const STATS = [
 	{
 		name: "Institutions",
 		value: "10+",
+		icon: <School className="size-14" />,
 	},
 	{
-		name: "Consistent Global ICSE topper",
-		value: "3 years",
+		name: "Consecutively Global ICSE topper",
+		value: "3 Years",
+		icon: <Trophy className="size-14" />,
 	},
-	{ name: "Students catered", value: "10,000+" },
+	{
+		name: "Students catered",
+		value: "10,000+",
+		icon: <Users className="size-14" />,
+	},
 ];
 
 export default function Home() {
@@ -41,16 +48,17 @@ export default function Home() {
 					width={4000}
 					height={4000}
 					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-					className="md:h-screen h-100 w-full overflow-hidden rounded-4xl object-cover object-center [mask-image:linear-gradient(to_top,transparent,black_0%)] lg:h-full lg:object-center -z-10"
+					className="md:h-screen h-100 w-full overflow-hidden rounded-4xl object-cover object-center mask-[linear-gradient(to_top,transparent,black_0%)] lg:h-full lg:object-center -z-10"
 				/>
-				<div className="w-full rounded-3xl flex flex-col max-md:items-center gap-8 bg-secondary md:px-24 py-5">
+				<div className="w-full rounded-3xl flex flex-col items-center gap-8 bg-secondary lg:px-24 py-8">
 					<Badge>The Trust</Badge>
-					<div className="flex max-md:flex-col gap-y-16 items-center justify-between">
+					<div className="flex max-md:flex-col gap-y-16 items-center justify-between w-full">
 						{STATS.map((s) => (
 							<div
 								key={s.name}
-								className="flex flex-col items-center gap-2 text-center h-full"
+								className="flex flex-col items-center gap-2 text-center h-full md:min-w-[14vw]"
 							>
+								<div className="text-primary">{s.icon}</div>
 								<p className="text-6xl font-bold tracking-tight text-primary">
 									{s.value}
 								</p>
@@ -77,12 +85,15 @@ export default function Home() {
 							impactful social initiatives
 						</p>
 					</div>
+					<Link href={"/about-us"}>
+						<Button variant={"link"} className="p-0">
+							Read More
+						</Button>
+					</Link>
 				</div>
 				<div className="w-full min-h-full bg-border rounded-2xl max-md:aspect-square" />
 			</div>
 			<CarouselPlugin />
-
-			<div className="flex h-fit w-full flex-col gap-6 p-4 md:p-20 md:pt-10"></div>
 		</div>
 	);
 }
