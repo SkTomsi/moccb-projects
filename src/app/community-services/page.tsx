@@ -17,7 +17,7 @@ export default function PartneringTrustsPage() {
 			</div>
 			<div className="md:space-y-5 space-y-3">
 				<h3 className="text-xl font-medium tracking-tight text-center">
-					Projecrs under a partnering trust
+					Projects under a partnering trust
 				</h3>
 				<div className="grid h-fit w-full gap-8 md:grid-cols-2 lg:grid-cols-3">
 					{PartnerProjects.map((p) => (
