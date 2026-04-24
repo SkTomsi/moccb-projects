@@ -1,7 +1,7 @@
 import { School, Trophy, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { CarouselPlugin } from "@/components/school-carousel";
+import { SchoolCarouselSection } from "@/components/school-carousel";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
@@ -51,7 +51,9 @@ export default function Home() {
 					className="md:h-screen h-100 w-full overflow-hidden rounded-4xl object-cover object-center mask-[linear-gradient(to_top,transparent,black_0%)] lg:h-full lg:object-center -z-10"
 				/>
 				<div className="w-full rounded-3xl flex flex-col items-center gap-8 bg-secondary lg:px-24 py-8">
-					<Badge>The Trust</Badge>
+					<h3 className="text-3xl font-fold text-primary tracking-tight">
+						The Trust
+					</h3>
 					<div className="flex max-md:flex-col gap-y-16 items-center justify-between w-full">
 						{STATS.map((s) => (
 							<div
@@ -93,7 +95,7 @@ export default function Home() {
 				</div>
 				<div className="w-full min-h-full bg-border rounded-2xl max-md:aspect-square" />
 			</div>
-			<CarouselPlugin />
+			<SchoolCarouselSection />
 		</div>
 	);
 }

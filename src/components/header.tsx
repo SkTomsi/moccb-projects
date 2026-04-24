@@ -24,10 +24,10 @@ import {
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
 const NAV_MENU = [
-	{
-		name: "The Leadership",
-		href: "/the-leadership",
-	},
+	// {
+	// 	name: "The Leadership",
+	// 	href: "/the-leadership",
+	// },
 	{
 		name: "Community Services",
 		href: "/community-services",

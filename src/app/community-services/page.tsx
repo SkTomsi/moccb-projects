@@ -4,7 +4,7 @@ import { PartnerProjects, projects } from "@/data/projects";
 export default function PartneringTrustsPage() {
 	return (
 		<div
-			className="flex h-fit w-full flex-col gap-10 p-4 md:p-20"
+			className="flex h-fit max-w-7xl mx-auto flex-col gap-10 p-4 md:p-20"
 			id="community-services"
 		>
 			<h3 className="w-full font-extrabold text-3xl text-black/95 tracking-tighter md:text-4xl text-center">
@@ -15,7 +15,7 @@ export default function PartneringTrustsPage() {
 					<ProjectCard project={p} key={p.name} />
 				))}
 			</div>
-			<div className="md:space-y-5 space-y-3">
+			<div className="md:space-y-5 space-y-3 mt-16">
 				<h3 className="text-xl font-medium tracking-tight text-center">
 					Projects under a partnering trust
 				</h3>

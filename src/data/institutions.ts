@@ -52,17 +52,17 @@ export const otherTrusts: Institution[] = [
 	{ name: "St Thomas Public School, Kirkee, Pune", image: "" },
 	{ name: "St George School, Dehu Road, Pune", image: "" },
 	{ name: "Gregorian Public School, Roha", image: "" },
-	{ name: "Indira Institute of Business Management (IIBM)", image: "" },
-
-	{
-		name: "Dr Mar Theophilus Institute of Management Studies (DMTIMS)",
-		image: "",
-	},
 ];
 
 export const VES_TRUSTS: Institution[] = [
 	{
 		name: "Western College of Commerce & Business Management (WCCBM)",
+		image: "",
+	},
+	{ name: "Indira Institute of Business Management (IIBM)", image: "" },
+
+	{
+		name: "Dr Mar Theophilus Institute of Management Studies (DMTIMS)",
 		image: "",
 	},
 ];
