@@ -108,18 +108,25 @@ export function Header() {
 			>
 				<div className="px-5 py-4 flex items-center justify-between">
 					<Link href={"/"}>
-						<div className="flex items-center space-x-2">
+						<div
+							className="flex items-center space-x-2 transition-all duration-500 ease-in-out"
+							style={{
+								scale: isScrolled ? "0.8" : "1",
+								maxHeight: isScrolled ? "40px" : "",
+							}}
+						>
 							<Image
-								className={clsx(
-									"size-[80px] object-contain text-base",
-									isScrolled === true && "size-[20px] text-xs",
-								)}
+								className={clsx("size-[80px] object-contain text-base")}
 								src={"/logo.png"}
 								alt="MOSC Logo"
 								width={120}
 								height={120}
 							/>
-							<p className="md:text-base text-xs font-bold tracking-tight uppercase">
+							<p
+								className={clsx(
+									"md:text-base text-xs font-bold tracking-tight uppercase",
+								)}
+							>
 								The Malankara Orthodox Church <br />
 								Council of Bombay
 							</p>
