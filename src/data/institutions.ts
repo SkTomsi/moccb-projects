@@ -1,10 +1,6 @@
-interface Institution {
-	name: string; // school name
-	image?: string;
-	shortDescription?: string; // principal/admin
-}
+import type { Project } from "./projects";
 
-export const institutions: Institution[] = [
+export const institutions: Project[] = [
 	{
 		name: "St. Mary's School & Junior College & St. Mary's Tejaswani School, Vashi",
 		image: "",
@@ -47,22 +43,32 @@ export const institutions: Institution[] = [
 	},
 ];
 
-export const otherTrusts: Institution[] = [
+export const otherTrusts: Project[] = [
 	{ name: "St George High School, Mulund", image: "" },
 	{ name: "St Thomas Public School, Kirkee, Pune", image: "" },
 	{ name: "St George School, Dehu Road, Pune", image: "" },
-	{ name: "Gregorian Public School, Roha", image: "" },
+	{
+		name: "Gregorian Public School, Roha",
+		image: "",
+		website: "https://gregorianpublicschool.in/",
+	},
 ];
 
-export const VES_TRUSTS: Institution[] = [
+export const VES_TRUSTS: Project[] = [
 	{
 		name: "Western College of Commerce & Business Management (WCCBM)",
 		image: "",
+		website: "https://wccbm.ac.in/",
 	},
-	{ name: "Indira Institute of Business Management (IIBM)", image: "" },
+	{
+		name: "Indira Institute of Business Management (IIBM)",
+		image: "",
+		website: "https://www.indiraiibm.edu.in/",
+	},
 
 	{
 		name: "Dr Mar Theophilus Institute of Management Studies (DMTIMS)",
 		image: "",
+		website: "https://dmtims.edu.in/",
 	},
 ];

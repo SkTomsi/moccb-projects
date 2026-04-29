@@ -10,7 +10,6 @@ import { Button } from "./ui/button";
 import {
 	DropdownMenu,
 	DropdownMenuContent,
-	DropdownMenuGroup,
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
@@ -35,6 +34,10 @@ const NAV_MENU = [
 	{
 		name: "Partnering Trusts",
 		href: "/partnering-trusts",
+	},
+	{
+		name: "Schools",
+		href: "/schools",
 	},
 	{
 		name: "About Us",

@@ -2,7 +2,6 @@
 
 import Autoplay from "embla-carousel-autoplay";
 import * as React from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import {
 	Carousel,
 	type CarouselApi,
@@ -11,15 +10,15 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from "@/components/ui/carousel";
+import { SCHOOLS } from "@/data/schools";
 import { cn } from "@/lib/utils";
+import { ProjectCard } from "./project-card";
 import { Badge } from "./ui/badge";
 
 export function SchoolCarouselSection() {
 	const [api, setApi] = React.useState<CarouselApi>();
 	const [current, setCurrent] = React.useState(0);
-	const plugin = React.useRef(
-		Autoplay({ delay: 2000, stopOnInteraction: true }),
-	);
+	const plugin = React.useRef(Autoplay({ delay: 2000 }));
 
 	React.useEffect(() => {
 		if (!api) {
@@ -49,14 +48,14 @@ export function SchoolCarouselSection() {
 					}}
 					className="w-full"
 					onMouseEnter={plugin.current.stop}
-					onMouseLeave={plugin.current.reset}
+					onMouseLeave={plugin.current.play}
 					setApi={setApi}
 				>
 					<div className="md:mask-x-from-88%">
 						<CarouselContent>
-							{Array.from({ length: 6 }).map((_, index) => (
+							{SCHOOLS.map((s, index) => (
 								<CarouselItem
-									key={index}
+									key={s.name}
 									className={cn(
 										"basis-3/9 transition-opacity max-md:basis-1/1",
 										{
@@ -64,15 +63,11 @@ export function SchoolCarouselSection() {
 										},
 									)}
 								>
-									<div className="p-1">
-										<Card>
-											<CardContent className="flex aspect-square items-center justify-center p-6">
-												<span className="text-4xl font-semibold">
-													School {index + 1}
-												</span>
-											</CardContent>
-										</Card>
-									</div>
+									<ProjectCard
+										project={s}
+										isCarouselItem
+										className="hover:shadow-none"
+									/>
 								</CarouselItem>
 							))}
 						</CarouselContent>

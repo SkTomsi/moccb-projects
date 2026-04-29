@@ -1,32 +1,23 @@
 import type { StaticImageData } from "next/image";
 import type { JSX } from "react";
-import annayojana from "@/assets/annayojana.jpg";
-import ashray from "@/assets/ashray.jpeg";
-import counseling from "@/assets/counseling.webp";
-import nutrition from "@/assets/nutrition.jpg";
-import scholarship from "@/assets/scholarship.webp";
-import sneha from "@/assets/sneha.jpeg";
-import specialSchool from "@/assets/special-school.webp";
-import tejaswini from "@/assets/tejaswini-school.jpg";
-import trainingCenter from "@/assets/training-center.png";
-import welfareCenter from "@/assets/welfare-center.jpeg";
 import { GreogrianMapFrame, StMarysMapFrame } from "../lib/mapframes";
 
 export interface Project {
 	slug?: string;
 	name: string;
 	location?: string;
-	image?: StaticImageData | string;
+	image?: string;
 	shortDescription?: string;
 	longDescription?: string[];
 	locationLink?: string | JSX.Element;
+	website?: string;
 }
 
 export const projects: Project[] = [
 	{
 		slug: "ashray-bhavan",
 		name: "MAR THEOPHILUS ASHRAYA BHAVAN",
-		image: ashray,
+		image: "/assets/ashray.jpeg",
 		location: "Nerul, Navi Mumbai",
 		shortDescription: "A care home for cancer patients & bystanders",
 		longDescription: [
@@ -40,7 +31,7 @@ export const projects: Project[] = [
 		slug: "tejaswini-school",
 		name: "TEJASWINI SCHOOL",
 		location: "Vashi, Navi Mumbai",
-		image: tejaswini,
+		image: "/assets/tejaswini-school.jpg",
 		shortDescription:
 			"School for the economically disadvantaged children from Turbhe slum, since 2004",
 		longDescription: [
@@ -55,7 +46,7 @@ export const projects: Project[] = [
 		slug: "nutrition-for-tb-afflicted-children",
 		name: "NUTRITION for TB-AFFLICTED CHILDREN",
 		location: "Turbhe, Navi Mumbai",
-		image: nutrition,
+		image: "/assets/nutrition.jpg",
 		shortDescription:
 			"Providing daily nutrition comprising milk with Bournvita, boiled eggs, fruits, and snacks",
 		longDescription: [
@@ -72,7 +63,7 @@ export const projects: Project[] = [
 		slug: "mar-alvares-sneha-sadan-clinic",
 		name: "MAR ALVARES SNEHA SADAN CLINIC",
 		location: "Sawantwadi, Maharashtra",
-		image: sneha,
+		image: "/assets/sneha.jpeg",
 		shortDescription:
 			"A clinic for all villagers and a medical van which travels to villages around.",
 		longDescription: [
@@ -84,7 +75,7 @@ export const projects: Project[] = [
 		slug: "mar-alvares-welfare-center-for-children",
 		name: "MAR ALVARES WELFARE CENTRE FOR CHILDREN",
 		location: "Kalamboli, Navi Mumbai",
-		image: welfareCenter,
+		image: "/assets/welfare-center.jpeg",
 		shortDescription: "A space to empower children from streets & orphaned.",
 		longDescription: [
 			"The centre is aimed to support the underprivileged children namely, street children, orphans, pavement dwellers children and those from poor socio economic background from the surrounding areas.",
@@ -95,7 +86,7 @@ export const projects: Project[] = [
 		slug: "st-marys-training-center",
 		name: "ST. MARY’S TRAINING CENTRE",
 		location: "Turbhe, Navi Mumbai",
-		image: trainingCenter,
+		image: "/assets/training-center.png",
 		shortDescription:
 			"Skills training unit for the women in Turbhe slum areas.",
 		longDescription: [
@@ -109,7 +100,7 @@ export const projects: Project[] = [
 		slug: "gregorian-care-center",
 		name: "GREGORIAN CARE CENTER",
 		location: "Roha, Maharashtra",
-		image: sneha,
+		image: "/assets/sneha.jpeg",
 		shortDescription:
 			"Catering to needs and care for old age residents, contributing to their well-being.",
 		longDescription: [
@@ -123,7 +114,7 @@ export const projects: Project[] = [
 		slug: "counselling-centres",
 		name: "COUNSELLING CENTRES",
 		location: "Coming soon",
-		image: counseling,
+		image: "/assets/counseling.webp",
 		shortDescription:
 			"Counselling clinics providing psychological care and support for community",
 		longDescription: [
@@ -134,7 +125,7 @@ export const projects: Project[] = [
 		slug: "education-aid-scholarship",
 		name: "EDUCATION AID / SCHOLARSHIP",
 		location: "Coming soon",
-		image: scholarship,
+		image: "/assets/scholarship.webp",
 		shortDescription:
 			"Provide fees assistance for the financially weaker and academically excelling students.",
 		longDescription: ["Sponsor ₹10,00,000/- towards the same for a year"],
@@ -146,7 +137,7 @@ export const PartnerProjects: Project[] = [
 		slug: "annayojana",
 		name: "ANNAYOJNA",
 		location: "Vashi, Navi Mumbai",
-		image: annayojana,
+		image: "/assets/annayojana.jpg",
 		shortDescription: "A lunch meal for bystanders of NMMC Hospital, Vashi",
 		longDescription: [
 			"Addressing the hunger faced by relatives accompanying patients at the Vashi Municipal hospital, this initiative offers free lunches and bottled water to about 150 individuals every Saturday. The aim is to expand this service to more days through increased sponsorship.",
@@ -158,7 +149,7 @@ export const PartnerProjects: Project[] = [
 		slug: "gregorian-special-school",
 		name: "GREGORIAN SPECIAL SCHOOL",
 		location: "Roha, Maharashtra",
-		image: specialSchool,
+		image: "/assets/special-school.webp",
 		shortDescription:
 			"To support children with determination for their developmental needs.",
 		longDescription: [
